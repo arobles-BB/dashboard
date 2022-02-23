@@ -1,0 +1,28 @@
+# Use root/bloobirds as user/password credentials docker run --detach --name mariadb --env MARIADB_USER=root --env MARIADB_PASSWORD=bloobirds --env MARIADB_ROOT_PASSWORD=bloobirds -p 3306:3306  mariadb:latest
+version: '3.1'
+
+#services:
+#  mariadb:
+#    image: mariadb:latest
+#    ports:
+#      - 3306:3306
+#    environment:
+#      MARIADB_ROOT_PASSWORD: bloobirds
+#      MARIADB_PASSWORD: bloobirds
+#      MARIADB_USER: root
+#
+#  mariadb-admin:
+#    image: adminer:latest
+#    ports:
+#      - 8080:8080
+
+# Use postgres/bloobirds user/password credentials
+
+services:
+  db:
+    image: postgres:latest
+    ports:
+       - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: bloobirds
+

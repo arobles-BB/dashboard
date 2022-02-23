@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="480f0bd8-4dd2-43a6-80c7-7b801763103d" name="dashboard" url="jdbc:mariadb://localhost:3306/dashboards" driverClass="org.mariadb.jdbc.Driver" />
+      <data-source id="1994d54e-d5cb-4684-9184-a759e922a560" name="PSQL Dash" url="jdbc:postgresql://localhost/dashboards" driverClass="org.postgresql.Driver" />
+    </data-sources>
+  </component>
+</project>
